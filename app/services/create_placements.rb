@@ -13,7 +13,7 @@ class CreatePlacements
     table.each do |row|
       # TODO: Check if row can be passed directly into Placement.create
       placement_hash = {
-        placement_id: row[:placement_id],
+        placement_id: row[:id],
         name: row[:name],
         start: row[:start],
         end_date: row[:end_date],

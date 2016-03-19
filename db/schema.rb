@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160319030600) do
     t.integer "placement_id"
     t.string  "name"
     t.date    "start"
-    t.date    "end"
+    t.date    "end_date"
     t.float   "cpm"
     t.float   "budget"
   end
