@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160319030600) do
   create_table "placements", force: :cascade do |t|
     t.integer "placement_id"
     t.string  "name"
-    t.date    "start"
+    t.date    "start_date"
     t.date    "end_date"
     t.float   "cpm"
     t.float   "budget"

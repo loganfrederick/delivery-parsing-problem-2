@@ -1,0 +1,15 @@
+Steps:
+
+1. Read placements.csv to Instantiate Placement data model
+2. Read delivery.csv data and store in data structure that allows for:
+  2a. Calculate the total number of impressions delivered and final cost of each flight, and placement.
+  2b. Calculate the number of impressions delivered and cost for an arbitrary range of days within the provided data set.
+
+3. Write a method that provides a way to calculate a pacing percentage and show if we are over or under spending our budget up to any point in the campaign.
+
+
+
+
+CreatePlacements.new.call
+CreateDeliveries.new.call
+DeliveryCalculator.new(1).cost_of_deliveries_within_date_range('2015-11-01', '2015-11-30')

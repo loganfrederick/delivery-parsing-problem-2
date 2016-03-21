@@ -3,7 +3,7 @@ class InitialSchema < ActiveRecord::Migration
     create_table :placements do |t|
       t.integer :placement_id
       t.string :name
-      t.date :start
+      t.date :start_date
       t.date :end_date
       t.float :cpm
       t.float :budget

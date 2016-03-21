@@ -15,8 +15,8 @@ class CreatePlacements
       placement_hash = {
         placement_id: row[:id],
         name: row[:name],
-        start: row[:start],
-        end_date: row[:end_date],
+        start_date: Date.strptime(row[:start], '%m/%d/%Y').strftime('%d/%m/%Y'),
+        end_date: Date.strptime(row[:end], '%m/%d/%Y').strftime('%d/%m/%Y'),
         cpm: row[:cpm],
         budget: row[:budget]
       }

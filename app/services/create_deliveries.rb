@@ -16,7 +16,7 @@ class CreateDeliveries
       # TODO: Check if row can be passed directly into Delivery.create
       delivery_hash = {
         placement_id: row[:placement_id],
-        date: row[:date],
+        date: Date.strptime(row[:date], '%m/%d/%Y').strftime('%d/%m/%Y'),
         impressions: row[:impressions]
       }
 
